@@ -15,13 +15,24 @@ const response = await apiWrapper("https://jsonplaceholder.typicode.com/todos/1"
 
 ```
 
+# Complex Usage (with config argument)
+
+```
+const apiWrapper = require("api-wrapper");
+
+const config = {...configOptions};
+
+const response = await apiWrapper("https://jsonplaceholder.typicode.com/todos/1", config);
+
+```
+
 # Options
 
 The config argument is optional but below are the available configs <br>
 Default options are marked with <b>*<b>
 
 ```
-config = {
+const config = {
     method:  "GET", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, *cors, same-origin
     cache: "default", // *default, no-cache, reload, force-cache, only-if-cached
