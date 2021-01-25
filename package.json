@@ -1,5 +1,5 @@
 {
-    "name": "api-wrapper",
+    "name": "api-fetch-wrapper",
     "version": "1.0.0",
     "description": "A simple API Wrapper for making calls to different API endpoint with different methods",
     "main": "app.js",
@@ -13,7 +13,7 @@
     "keywords": [
         "API"
     ],
-    "author": "mastercraft",
+    "author": "MasterCraft",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/IAmMasterCraft/api-wrapper/issues"

@@ -1,6 +1,6 @@
 # Intro
 
-This is a simple API Wrapper for making calls to different API endpoint with different methods.
+This is a simple API Fetch Wrapper for making calls to different API endpoint with different methods.
 
 # Installation
 
@@ -9,7 +9,7 @@ This is a simple API Wrapper for making calls to different API endpoint with dif
 # Basic Usage
 
 ```
-const apiWrapper = require("api-wrapper");
+const apiWrapper = require("api-fetch-wrapper");
 
 const response = await apiWrapper("https://jsonplaceholder.typicode.com/todos/1");
 
@@ -18,7 +18,7 @@ const response = await apiWrapper("https://jsonplaceholder.typicode.com/todos/1"
 # Complex Usage (with config argument)
 
 ```
-const apiWrapper = require("api-wrapper");
+const apiWrapper = require("api-fetch-wrapper");
 
 const config = {...configOptions};
 
