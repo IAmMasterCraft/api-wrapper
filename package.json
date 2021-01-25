@@ -1,0 +1,22 @@
+{
+    "name": "api-wrapper",
+    "version": "1.0.0",
+    "description": "A simple API Wrapper for making calls to different API endpoint with different methods",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/IAmMasterCraft/api-wrapper.git"
+    },
+    "keywords": [
+        "API"
+    ],
+    "author": "mastercraft",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/IAmMasterCraft/api-wrapper/issues"
+    },
+    "homepage": "https://github.com/IAmMasterCraft/api-wrapper#readme"
+}
