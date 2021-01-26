@@ -15,7 +15,7 @@ const wrapper = require("./app");
 const config = {
         get: [
                 {
-                    // "https://jsonplaceholder.typicode.com/posts": {}, 
+                    "https://jsonplaceholder.typicode.com/posts": {}, 
                     "https://jsonplaceholder.typicode.com/posts/1": {},
                 }
             ],
@@ -29,7 +29,6 @@ allResponse.then(result => console.log(result));
 # Options
 
 The config argument is <b>REQUIRED</b> but below are the available configs <br>
-Default options are marked with <b>*<b>
 
 ```
 const config = {
@@ -43,8 +42,7 @@ const config = {
     ]
 };
 
+```
 <b>method</b>: "get" - specifies http method for api request <br>
 <b>url</b>: "http://some-api-host/endpoint" - specifies url string of different API endpoint <br>
 <b>data</b>: {key: "value",} - specifies key-value pair of object/data to be sent to different API endpoint <br>
-
-```
