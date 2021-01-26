@@ -9,7 +9,7 @@ This is a super simple API Wrapper for making calls to different API endpoint wi
 # Usage
 
 ```
-const wrapper = require("./app");
+const wrapper = require("simple-api-wrapper");
 
 //endpoints and data
 const config = {

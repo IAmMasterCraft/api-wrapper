@@ -1,6 +1,6 @@
 {
     "name": "simple-api-wrapper",
-    "version": "1.0.0",
+    "version": "1.1.2",
     "description": "A simple API Wrapper for making calls to different API endpoint with different methods",
     "main": "app.js",
     "scripts": {
