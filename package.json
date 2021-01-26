@@ -18,5 +18,8 @@
     "bugs": {
         "url": "https://github.com/IAmMasterCraft/api-wrapper/issues"
     },
-    "homepage": "https://github.com/IAmMasterCraft/api-wrapper#readme"
+    "homepage": "https://github.com/IAmMasterCraft/api-wrapper#readme",
+    "dependencies": {
+        "axios": "^0.21.1"
+    }
 }

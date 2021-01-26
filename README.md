@@ -1,48 +1,50 @@
 # Intro
 
-This is a simple API Wrapper for making calls to different API endpoint with different methods.
+This is a super simple API Wrapper for making calls to different API endpoint with GET request.
 
 # Installation
 
 `npm i simple-api-wrapper --save`
 
-# Basic Usage
+# Usage
 
 ```
-const apiWrapper = require("simple-api-wrapper");
+const wrapper = require("./app");
 
-const response = await apiWrapper("https://jsonplaceholder.typicode.com/todos/1");
+//endpoints and data
+const config = {
+        get: [
+                {
+                    // "https://jsonplaceholder.typicode.com/posts": {}, 
+                    "https://jsonplaceholder.typicode.com/posts/1": {},
+                }
+            ],
+        };
 
-```
-
-# Complex Usage (with config argument)
-
-```
-const apiWrapper = require("simple-api-wrapper");
-
-const config = {...configOptions};
-
-const response = await apiWrapper("https://jsonplaceholder.typicode.com/todos/1", config);
+const allResponse = wrapper.apiWrapper(config);
+allResponse.then(result => console.log(result));
 
 ```
 
 # Options
 
-The config argument is optional but below are the available configs <br>
+The config argument is <b>REQUIRED</b> but below are the available configs <br>
 Default options are marked with <b>*<b>
 
 ```
 const config = {
-    method:  "GET", // *GET, POST, PUT, DELETE, etc.
-    mode: "cors", // no-cors, *cors, same-origin
-    cache: "default", // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: "same-origin", // include, *same-origin, omit
-    headers: {
-        "Content-Type": "application/json", // *application/json, application/x-www-form-urlencoded, etc.
-    },
-    redirect: "follow", // manual, *follow, error
-    referrerPolicy: "no-referrer-when-downgrade", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    data: {}, // body data type must match "Content-Type" in headers
-    response: "json", // *json, text, - determines how response object will be parsed
-}
+    method: [
+        {
+            url_1: {...data_1}, 
+            url_2: {...data_2},
+            ...
+            url_n: {...data_n},
+        }
+    ]
+};
+
+<b>method</b>: "get" - specifies http method for api request <br>
+<b>url</b>: "http://some-api-host/endpoint" - specifies url string of different API endpoint <br>
+<b>data</b>: {key: "value",} - specifies key-value pair of object/data to be sent to different API endpoint <br>
+
 ```
